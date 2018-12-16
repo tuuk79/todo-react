@@ -1,28 +1,33 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import TodoList from './TodoList';
+import AddTodo from './AddTodo';
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            todos: []
+        }
+
+        this.addTodo = this.addTodo.bind(this)
+    }
+
+    addTodo(event) {
+        let updated = this.state.todos.slice()
+        updated.push({ name: event })
+        this.setState({ todos: updated })
+    }
+
+    render() {
+        return (
+            <div className="App">
+                <AddTodo addTodo={this.addTodo} />
+                <TodoList todos={this.state.todos} />
+            </div>
+        );
+    }
 }
 
 export default App;
