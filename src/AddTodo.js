@@ -9,8 +9,8 @@ class AddTodo extends Component {
     }
 
     handleClick() {
-        const value = document.getElementsByName('addTodoInput')[0].value;
-        this.props.addTodo(value)
+        const name = document.getElementsByName('addTodoInput')[0].value;
+        this.props.addTodo(name)
     }
 
     render() {
