@@ -1,7 +1,15 @@
-.no-bullet {
+li {
   list-style: none;
 }
 
 .float-right {
 	float: right;
+}
+
+.even {
+	background-color: lightgray
+}
+
+.odd {
+	background-color: white
 }

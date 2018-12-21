@@ -1,1 +1,7 @@
+.TodoList {
+	border: solid 1px black;
+}
 
+ul {
+	padding: 0;
+}
