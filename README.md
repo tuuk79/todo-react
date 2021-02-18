@@ -4,7 +4,13 @@
 ## Description
 ### This is a todo application
 
+## Tech Stack
+MongoDb
+Express.js
+React.js
+Redux
+Node.js
+
 ## Features
-- user can add a todo item using the button or clicking Enter.
-- user can delete a todo item using the X at the right side of the screen.
-- todo items are alternately colored.
+- user can add todo
+- user can see todos
