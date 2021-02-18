@@ -5,11 +5,11 @@
 ### This is a todo application
 
 ## Tech Stack
-MongoDb
-Express.js
-React.js
-Redux
-Node.js
+- MongoDb
+- Express.js
+- React.js
+- Redux
+- Node.js
 
 ## Features
 - user can add todo
